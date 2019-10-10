@@ -13,7 +13,7 @@ export interface HandlerInfo {
 export function getHandler<M extends ModuleWithSource, K extends keyof M>(
   mod: M,
   key: K,
-): HandlerInfo | undefined {
+): HandlerInfo {
   const source = mod.source;
 
   return {
