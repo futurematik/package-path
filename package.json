@@ -1,11 +1,11 @@
 {
   "name": "@fmtk/package-path",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "author": "Gordon Leigh <gordon.leigh@futurematik.co.uk>",
   "repository": "https://github.com/futurematik/package-path",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {},
   "scripts": {
     "build": "yarn clean && yarn lint && yarn compile",
