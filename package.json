@@ -1,0 +1,37 @@
+{
+  "name": "@fmtk/package-path",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "Gordon Leigh <gordon.leigh@futurematik.co.uk>",
+  "repository": "https://github.com/futurematik/package-path",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "build": "yarn clean && yarn lint && yarn compile",
+    "bumpfeat": "npm version minor && npm publish",
+    "bumpfix": "npm version patch && npm publish",
+    "bumpmajor": "npm version major && npm publish",
+    "clean": "rm -rf lib/",
+    "compile": "tsc",
+    "lint": "eslint \"src/**\"",
+    "postversion": "git push --follow-tags",
+    "prepare": "npm run build",
+    "preversion": "npm run build",
+    "watch:compile": "compile -w"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.12",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.3.0",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
